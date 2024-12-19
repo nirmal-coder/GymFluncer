@@ -58,6 +58,11 @@
 
 }
 
+.Header__sm--navItem li a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .Header__sm--navItem li:hover{
     color: #EB0000;
 }
