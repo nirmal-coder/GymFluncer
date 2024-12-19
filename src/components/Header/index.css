@@ -1,0 +1,180 @@
+.Header__sm{
+    width: 80vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    background-color: #0f0f0fec;
+    margin: 0 auto;
+    border-radius: 99px;
+    position: fixed;
+    top: 20px;
+    left: auto;
+    right: auto;
+    font-family: 'Orbitron', sans-serif;
+    z-index: 10;
+}
+
+.Header__sm , .Header__lg a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.Header__sm--icon{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #2a990b;
+    background-color: #1a1a1a;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.Header__sm--navItem{
+    color: #fff;
+    z-index: 10;
+    position: fixed;
+    top: 95px;
+    right: 10%;
+    border: 1px solid #595959;
+    background-color: #0f0f0fe6;
+    list-style: none;
+    padding-left: 0px;
+    border-radius: 10px;
+    padding: 20px 40px 10px 40px;
+
+}
+
+.Header__sm--navItem li{
+    color: #96979C;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+    transition:ease-out ;
+
+}
+
+.Header__sm--navItem li:hover{
+    color: #EB0000;
+}
+
+.Header__lg{
+    width: 80vw;
+    height: 70px;
+    display: none;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    background-color: #0f0f0f;
+    margin: 0 auto;
+    border-radius: 99px;
+    position: fixed;
+    top: 20px;
+    left: auto;
+    font-family: 'Orbitron', sans-serif;
+    right: auto;
+    z-index: 10;
+    color: #96979C;
+    }
+
+.Header__lg select{
+    background-color: transparent;
+    border: 0px;
+    color: #96979C;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    transition:color 0.3s ease-in-out;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.Header__lg p{
+    font-size: 1rem;
+    font-weight: 700;
+    transition:color 0.5s ease-in-out;
+}
+
+.Header__lg select:hover{
+    color: #EB0000;
+    
+}
+.Header__lg p:hover{
+    color: #EB0000;
+    
+}
+
+.Header__lg button{
+    background-color: #EB0000;
+    color: #fff;
+    border-radius: 99px;
+    height: 75%;
+    width: 150px;
+    border: 0px;
+    font-size: 1.2rem;
+    font-family: "Orbitron", sans-serif;
+}
+
+@media (min-width:1024px){
+    .Header__sm{
+        display: none;
+    }
+    .Header__lg{
+    display: flex;
+    }
+    
+}
+
+@media (min-width:1440px){
+    .Header__lg select{
+        background-color: transparent;
+        border: 0px;
+        color: #96979C;
+        font-size: 1.2rem;
+        font-weight: 700;
+        outline: none;
+        transition:color 0.3s ease-in-out;
+        font-family: 'Orbitron', sans-serif;
+    
+    }
+    
+    .Header__lg p{
+        font-size: 1.2rem;
+        font-weight: 700;
+        transition:color 0.5s ease-in-out;
+    }
+    
+    .Header__lg select:hover{
+        color: #EB0000;
+        
+    }
+    .Header__lg p:hover{
+        color: #EB0000;
+        
+    }
+    
+    .Header__lg button{
+        background-color: #EB0000;
+        color: #fff;
+        border-radius: 99px;
+        height: 75%;
+        width: 200px;
+        border: 0px;
+        font-size: 1.3rem;
+        font-family: "Orbitron", sans-serif;
+    }
+    
+}
+
+.Header__lg option{
+    background-color: #0f0f0fe6;
+    color: #96979C;
+}
+
+.Header__lg select option:hover{
+    color: #EB0000;
+}

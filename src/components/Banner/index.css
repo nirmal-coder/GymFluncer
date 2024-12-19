@@ -1,0 +1,95 @@
+.Banner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/hero-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #0000003f;
+}
+
+.Banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1; 
+}
+
+.Banner__batch{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #1A1A1A;
+    border: 1px solid #28282C;
+    z-index: 2;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.Banner__batch img{
+    height: 30px;
+    width: 30px;
+}
+
+.Banner__batch--img{
+    margin-left: -15px;
+}
+.Banner__batch h3{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+}
+.Banner__content{
+    z-index: 3;
+    text-align: center;
+}
+.Banner__content h1{
+    color: #EB0000;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 15px;
+}
+
+.Banner__content p{
+    color: #DCDCDC;
+    letter-spacing: 1px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+
+}
+
+@media (min-width:768px){
+    .Banner__content{
+        width: 90%;
+    }
+    .Banner__content h1{
+        font-size: 3rem;
+    }
+    .Banner__content p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width:1024px){
+    .Banner__content{
+        width: 70%;
+    }
+    .Banner__content h1{
+        font-size: 4rem;
+    }
+    .Banner__content p{
+        font-size: 1.6rem;
+    }
+}

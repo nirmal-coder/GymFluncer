@@ -1,0 +1,102 @@
+.services{
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    text-align: center;
+}
+
+.services h2{
+    color: #EB0000;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 15px;
+}
+
+.services p{
+    color: #DCDCDC;
+    letter-spacing: 1px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    width: min(95% , 500px);
+
+}
+
+.services__banner-con{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.services__banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1; 
+}
+
+.services__banner {
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 85%; 
+    height: 200px; 
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 8px; 
+    padding: 20px; 
+    color: white; 
+    text-align: center; 
+    margin: 25px 0;
+  }
+
+  .services__banner h3{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+
+  .b-1{
+    background-image: url("https://framerusercontent.com/images/8pjYdTm9Om62CflNUsF8dHqkrlQ.png");
+  }
+  .b-2{
+    background-image: url("https://framerusercontent.com/images/LqURARtPkDasnz8xNZRw6V7LVc.png");
+  }
+  .b-3{
+    background-image: url("https://framerusercontent.com/images/ZiSz1ONCwWlZSSTVgpW4sZm1hI.png");
+  }
+  .b-4{
+    background-image: url("https://framerusercontent.com/images/H2mFADPlDeJZEZVhsqozg6Yc0.jpg");
+  }
+  .b-5{
+    background-image: url("https://framerusercontent.com/images/JrDw3jtgKjcQOYfgKW5tggM5U.jpg");
+  }
+
+
+@media (min-width:1024px){
+    .services__banner-con{
+        flex-direction: row;
+    }
+    .services__banner {
+        width: 25%;
+        height: 70vh;
+    }
+    .b-radius{
+        border-radius: 0;
+    }
+}

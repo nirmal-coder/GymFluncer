@@ -1,0 +1,168 @@
+.Transformation{
+    background-color: #000;
+    width: 100%;
+    min-height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Transformation h2{
+    color: #EB0000;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.trans_details{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.details_Header{
+    width: 90%;
+    border-left: 6px solid #EB0000;
+    padding-left: 15px;
+}
+
+.details_Header h1{
+    color: #b3b4b7;
+    font-family: "Orbitron", sans-serif;
+    margin-bottom: 10px;
+}
+
+.details_Header span{
+    color: #fff;
+}
+
+.table_header{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#b3b4b7 ;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.table_header span{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 0 7px;
+}
+.table-square{
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+.photo_before_after{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo_before_after div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo_before_after img{
+    width: 90%;
+}
+
+.photo_before_after p{
+    color: #EB0000;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.trans-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Increase the size of arrows */
+.slick-prev, .slick-next {
+    width: 100px; /* Width of the arrow */
+    height: 100px; /* Height of the arrow */
+    font-size: 60px; /* Arrow icon size */
+    z-index: 10; /* Ensure they are above other elements */
+  }
+  
+  /* Adjust the arrow position */
+  .slick-prev {
+    left: 15px; /* Move left arrow further out */
+  }
+  .slick-next {
+    right: 15px; /* Move right arrow further out */
+  }
+  
+  /* Style the dots */
+  .slick-dots li button {
+    width: 15px; /* Dot size */
+    height: 15px; /* Dot size */
+    border-radius: 50%; /* Make dots circular */
+    background-color: #fff; /* Dot color */
+    opacity: 0.7; /* Initial opacity */
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: black; /* Active dot color */
+    opacity: 1;
+  }
+
+
+@media (min-width:768px){
+    .photo_before_after{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .photo_before_after div{
+        width: 50%;
+    }
+    .photo_before_after img{
+        width: 90%;
+        margin: 0 15px;
+    }
+}
+
+@media (min-width:1024px){
+
+    .Transformation{
+        min-height: 50vh;
+    }
+    .Transformation h2{
+        font-size: 3rem;
+    }
+    .trans-main{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .trans_details{
+        width: 30%;
+    }
+    .photo_before_after{
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .photo_before_after div{
+        width: 50%;
+    }
+    .photo_before_after img{
+        width: 90%;
+        margin: 0 15px;
+    }
+
+}

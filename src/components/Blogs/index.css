@@ -1,0 +1,127 @@
+.blogs{
+    background-color: #000;
+    width: 100%;
+    min-height: 70vh;
+    margin-top: 120px;
+}
+
+.blogs h2{
+    color: #EB0000;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.blog_card_con{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog_card{
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #DCDCDC;
+}
+.blog_card h3{
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Orbitron', sans-serif;
+}
+.blog_bg1{
+    background-image:url("/blog-1.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog_bg2{
+    background-image:url("/blog-2.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog_bg3{
+    background-image:url("/blog-3.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog_btn{
+    padding: 10px 20px;
+    color: #DCDCDC;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.btn-red{
+    background-color: #EB0000;
+}
+.btn-green{
+    background-color: #2A990B;
+}
+.btn-orange{
+    background-color: #E3670E;
+}
+.blog_date{
+    display: flex;
+    align-items: center;
+}
+.date{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #DCDCDC;
+}
+.date p{
+    margin:0 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.avater{
+    display: flex;
+    align-items: center;
+}
+
+.avater img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.avater p{
+    margin:0 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+
+}
+
+@media (min-width:768px){
+    .blogs{
+        margin-top: 20px;
+    }
+    .blog_card_con{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .blog_card{
+        width: 30%;
+    }
+}
+
+@media (min-width:1024){
+    .blogs{
+        margin-top: 0px;
+    }
+}
